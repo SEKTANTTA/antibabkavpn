@@ -745,7 +745,36 @@
         }
       },
       {
-        "tag": "node-ru-24",
+        "tag": "node-ai-24",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "nl-central.v8x2b.lol",
+              "port": 443,
+              "users": [
+                {
+                  "id": "846cedee-2a52-0002-a0b9-11850ead6a8b",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "nl-central.v8x2b.lol",
+            "fingerprint": "ios",
+            "publicKey": "q3UXFUE5yYxNE4ugLUnYdpc9WRtR-sjsDTrKsiqzDHE",
+            "shortId": "",
+            "spiderX": "/"
+          }
+        }
+      },
+      {
+        "tag": "node-ru-25",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -775,7 +804,7 @@
         }
       },
       {
-        "tag": "node-ru-25",
+        "tag": "node-ru-26",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -805,7 +834,109 @@
         }
       },
       {
-        "tag": "node-ru-26",
+        "tag": "node-ai-27",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "itly.yandex-api.store",
+              "port": 8443,
+              "users": [
+                {
+                  "id": "78559873-84ef-4cab-a0b2-46d4cd20de4a",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "fingerprint": "qq",
+            "allowInsecure": false,
+            "serverName": "itly.yandex-api.store",
+            "alpn": [
+              "http/1.1"
+            ]
+          },
+          "wsSettings": {
+            "path": "/assets",
+            "headers": {
+              "Host": "itly.yandex-api.store"
+            }
+          }
+        }
+      },
+      {
+        "tag": "node-ai-28",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "179.255.190.43",
+              "port": 8443,
+              "users": [
+                {
+                  "id": "78559873-84ef-4cab-a0b2-46d4cd20de4a",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "fingerprint": "qq",
+            "allowInsecure": false,
+            "serverName": "itly.yandex-api.store"
+          },
+          "wsSettings": {
+            "path": "/assets",
+            "headers": {
+              "Host": "itly.yandex-api.store"
+            }
+          }
+        }
+      },
+      {
+        "tag": "node-ai-29",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "itly.yandex-api.store",
+              "port": 8443,
+              "users": [
+                {
+                  "id": "78559873-84ef-4cab-a0b2-46d4cd20de4a",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "fingerprint": "ios",
+            "allowInsecure": false,
+            "serverName": "itly.yandex-api.store"
+          },
+          "wsSettings": {
+            "path": "/assets",
+            "headers": {
+              "Host": "itly.yandex-api.store"
+            }
+          }
+        }
+      },
+      {
+        "tag": "node-ru-30",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -835,7 +966,7 @@
         }
       },
       {
-        "tag": "node-ru-27",
+        "tag": "node-ru-31",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -870,7 +1001,7 @@
         }
       },
       {
-        "tag": "node-ru-28",
+        "tag": "node-ru-32",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -900,7 +1031,7 @@
         }
       },
       {
-        "tag": "node-ru-29",
+        "tag": "node-ru-33",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -930,7 +1061,7 @@
         }
       },
       {
-        "tag": "node-ru-30",
+        "tag": "node-ru-34",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -964,7 +1095,7 @@
         }
       },
       {
-        "tag": "node-ai-31",
+        "tag": "node-ai-35",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -994,7 +1125,7 @@
         }
       },
       {
-        "tag": "node-ai-32",
+        "tag": "node-ai-36",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1026,7 +1157,7 @@
         }
       },
       {
-        "tag": "node-ai-33",
+        "tag": "node-ai-37",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1058,7 +1189,7 @@
         }
       },
       {
-        "tag": "node-ru-34",
+        "tag": "node-ru-38",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1091,7 +1222,7 @@
         }
       },
       {
-        "tag": "node-ru-35",
+        "tag": "node-ru-39",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1124,7 +1255,7 @@
         }
       },
       {
-        "tag": "node-ru-36",
+        "tag": "node-ru-40",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1160,7 +1291,7 @@
         }
       },
       {
-        "tag": "node-ru-37",
+        "tag": "node-ru-41",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1190,7 +1321,7 @@
         }
       },
       {
-        "tag": "node-ru-38",
+        "tag": "node-ru-42",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1226,7 +1357,7 @@
         }
       },
       {
-        "tag": "node-ru-39",
+        "tag": "node-ru-43",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1262,7 +1393,7 @@
         }
       },
       {
-        "tag": "node-ru-40",
+        "tag": "node-ru-44",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1292,7 +1423,7 @@
         }
       },
       {
-        "tag": "node-ru-41",
+        "tag": "node-ru-45",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1322,7 +1453,7 @@
         }
       },
       {
-        "tag": "node-ai-42",
+        "tag": "node-ai-46",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1355,7 +1486,40 @@
         }
       },
       {
-        "tag": "node-ru-43",
+        "tag": "node-ai-47",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "support.zoom.us",
+              "port": 443,
+              "users": [
+                {
+                  "id": "b054e267-e2d8-4ca2-b95e-79ca5cb7cf9a",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "fingerprint": "edge",
+            "allowInsecure": false,
+            "serverName": "cloud.ghostdev.lk"
+          },
+          "wsSettings": {
+            "path": "/",
+            "headers": {
+              "Host": "cloud.ghostdev.lk"
+            }
+          }
+        }
+      },
+      {
+        "tag": "node-ru-48",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1384,7 +1548,7 @@
         }
       },
       {
-        "tag": "node-ru-44",
+        "tag": "node-ru-49",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1413,7 +1577,7 @@
         }
       },
       {
-        "tag": "node-ru-45",
+        "tag": "node-ru-50",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1445,7 +1609,7 @@
         }
       },
       {
-        "tag": "node-ru-46",
+        "tag": "node-ru-51",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1479,7 +1643,7 @@
         }
       },
       {
-        "tag": "node-ru-47",
+        "tag": "node-ru-52",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1511,7 +1675,7 @@
         }
       },
       {
-        "tag": "node-ru-48",
+        "tag": "node-ru-53",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1540,7 +1704,7 @@
         }
       },
       {
-        "tag": "node-ru-49",
+        "tag": "node-ru-54",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1569,7 +1733,7 @@
         }
       },
       {
-        "tag": "node-ru-50",
+        "tag": "node-ru-55",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1597,7 +1761,7 @@
         }
       },
       {
-        "tag": "node-ru-51",
+        "tag": "node-ru-56",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1627,7 +1791,7 @@
         }
       },
       {
-        "tag": "node-ai-52",
+        "tag": "node-ai-57",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1657,7 +1821,7 @@
         }
       },
       {
-        "tag": "node-ai-53",
+        "tag": "node-ai-58",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1687,7 +1851,7 @@
         }
       },
       {
-        "tag": "node-ai-54",
+        "tag": "node-ai-59",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1717,7 +1881,7 @@
         }
       },
       {
-        "tag": "node-ru-55",
+        "tag": "node-ru-60",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1747,7 +1911,7 @@
         }
       },
       {
-        "tag": "node-ru-56",
+        "tag": "node-ru-61",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1777,7 +1941,7 @@
         }
       },
       {
-        "tag": "node-ru-57",
+        "tag": "node-ru-62",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1807,7 +1971,7 @@
         }
       },
       {
-        "tag": "node-ai-58",
+        "tag": "node-ai-63",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1837,7 +2001,7 @@
         }
       },
       {
-        "tag": "node-ai-59",
+        "tag": "node-ai-64",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1873,7 +2037,7 @@
         }
       },
       {
-        "tag": "node-ai-60",
+        "tag": "node-ai-65",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1909,7 +2073,7 @@
         }
       },
       {
-        "tag": "node-ru-61",
+        "tag": "node-ru-66",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1952,7 +2116,7 @@
         }
       },
       {
-        "tag": "node-ru-62",
+        "tag": "node-ru-67",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -1986,7 +2150,7 @@
         }
       },
       {
-        "tag": "node-ru-63",
+        "tag": "node-ru-68",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -2051,7 +2215,7 @@
         }
       },
       {
-        "tag": "node-ai-64",
+        "tag": "node-ai-69",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -2081,7 +2245,7 @@
         }
       },
       {
-        "tag": "node-ru-65",
+        "tag": "node-ru-70",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -2113,7 +2277,7 @@
         }
       },
       {
-        "tag": "node-ru-66",
+        "tag": "node-ru-71",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -2143,7 +2307,7 @@
         }
       },
       {
-        "tag": "node-ai-67",
+        "tag": "node-ai-72",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -2173,7 +2337,7 @@
         }
       },
       {
-        "tag": "node-ai-68",
+        "tag": "node-ai-73",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -2203,7 +2367,7 @@
         }
       },
       {
-        "tag": "node-ai-69",
+        "tag": "node-ai-74",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3020,7 +3184,36 @@
         }
       },
       {
-        "tag": "node-ru-24",
+        "tag": "node-ai-24",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "nl-central.v8x2b.lol",
+              "port": 443,
+              "users": [
+                {
+                  "id": "846cedee-2a52-0002-a0b9-11850ead6a8b",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "nl-central.v8x2b.lol",
+            "fingerprint": "ios",
+            "publicKey": "q3UXFUE5yYxNE4ugLUnYdpc9WRtR-sjsDTrKsiqzDHE",
+            "shortId": "",
+            "spiderX": "/"
+          }
+        }
+      },
+      {
+        "tag": "node-ru-25",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3050,7 +3243,7 @@
         }
       },
       {
-        "tag": "node-ru-25",
+        "tag": "node-ru-26",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3080,7 +3273,109 @@
         }
       },
       {
-        "tag": "node-ru-26",
+        "tag": "node-ai-27",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "itly.yandex-api.store",
+              "port": 8443,
+              "users": [
+                {
+                  "id": "78559873-84ef-4cab-a0b2-46d4cd20de4a",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "fingerprint": "qq",
+            "allowInsecure": false,
+            "serverName": "itly.yandex-api.store",
+            "alpn": [
+              "http/1.1"
+            ]
+          },
+          "wsSettings": {
+            "path": "/assets",
+            "headers": {
+              "Host": "itly.yandex-api.store"
+            }
+          }
+        }
+      },
+      {
+        "tag": "node-ai-28",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "179.255.190.43",
+              "port": 8443,
+              "users": [
+                {
+                  "id": "78559873-84ef-4cab-a0b2-46d4cd20de4a",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "fingerprint": "qq",
+            "allowInsecure": false,
+            "serverName": "itly.yandex-api.store"
+          },
+          "wsSettings": {
+            "path": "/assets",
+            "headers": {
+              "Host": "itly.yandex-api.store"
+            }
+          }
+        }
+      },
+      {
+        "tag": "node-ai-29",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "itly.yandex-api.store",
+              "port": 8443,
+              "users": [
+                {
+                  "id": "78559873-84ef-4cab-a0b2-46d4cd20de4a",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "fingerprint": "ios",
+            "allowInsecure": false,
+            "serverName": "itly.yandex-api.store"
+          },
+          "wsSettings": {
+            "path": "/assets",
+            "headers": {
+              "Host": "itly.yandex-api.store"
+            }
+          }
+        }
+      },
+      {
+        "tag": "node-ru-30",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3110,7 +3405,7 @@
         }
       },
       {
-        "tag": "node-ru-27",
+        "tag": "node-ru-31",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3145,7 +3440,7 @@
         }
       },
       {
-        "tag": "node-ru-28",
+        "tag": "node-ru-32",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3175,7 +3470,7 @@
         }
       },
       {
-        "tag": "node-ru-29",
+        "tag": "node-ru-33",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3205,7 +3500,7 @@
         }
       },
       {
-        "tag": "node-ru-30",
+        "tag": "node-ru-34",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3239,7 +3534,7 @@
         }
       },
       {
-        "tag": "node-ai-31",
+        "tag": "node-ai-35",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3269,7 +3564,7 @@
         }
       },
       {
-        "tag": "node-ai-32",
+        "tag": "node-ai-36",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3301,7 +3596,7 @@
         }
       },
       {
-        "tag": "node-ai-33",
+        "tag": "node-ai-37",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3333,7 +3628,7 @@
         }
       },
       {
-        "tag": "node-ru-34",
+        "tag": "node-ru-38",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3366,7 +3661,7 @@
         }
       },
       {
-        "tag": "node-ru-35",
+        "tag": "node-ru-39",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3399,7 +3694,7 @@
         }
       },
       {
-        "tag": "node-ru-36",
+        "tag": "node-ru-40",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3435,7 +3730,7 @@
         }
       },
       {
-        "tag": "node-ru-37",
+        "tag": "node-ru-41",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3465,7 +3760,7 @@
         }
       },
       {
-        "tag": "node-ru-38",
+        "tag": "node-ru-42",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3501,7 +3796,7 @@
         }
       },
       {
-        "tag": "node-ru-39",
+        "tag": "node-ru-43",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3537,7 +3832,7 @@
         }
       },
       {
-        "tag": "node-ru-40",
+        "tag": "node-ru-44",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3567,7 +3862,7 @@
         }
       },
       {
-        "tag": "node-ru-41",
+        "tag": "node-ru-45",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3597,7 +3892,7 @@
         }
       },
       {
-        "tag": "node-ai-42",
+        "tag": "node-ai-46",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3630,7 +3925,40 @@
         }
       },
       {
-        "tag": "node-ru-43",
+        "tag": "node-ai-47",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "support.zoom.us",
+              "port": 443,
+              "users": [
+                {
+                  "id": "b054e267-e2d8-4ca2-b95e-79ca5cb7cf9a",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "fingerprint": "edge",
+            "allowInsecure": false,
+            "serverName": "cloud.ghostdev.lk"
+          },
+          "wsSettings": {
+            "path": "/",
+            "headers": {
+              "Host": "cloud.ghostdev.lk"
+            }
+          }
+        }
+      },
+      {
+        "tag": "node-ru-48",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3659,7 +3987,7 @@
         }
       },
       {
-        "tag": "node-ru-44",
+        "tag": "node-ru-49",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3688,7 +4016,7 @@
         }
       },
       {
-        "tag": "node-ru-45",
+        "tag": "node-ru-50",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3720,7 +4048,7 @@
         }
       },
       {
-        "tag": "node-ru-46",
+        "tag": "node-ru-51",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3754,7 +4082,7 @@
         }
       },
       {
-        "tag": "node-ru-47",
+        "tag": "node-ru-52",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3786,7 +4114,7 @@
         }
       },
       {
-        "tag": "node-ru-48",
+        "tag": "node-ru-53",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3815,7 +4143,7 @@
         }
       },
       {
-        "tag": "node-ru-49",
+        "tag": "node-ru-54",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3844,7 +4172,7 @@
         }
       },
       {
-        "tag": "node-ru-50",
+        "tag": "node-ru-55",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3872,7 +4200,7 @@
         }
       },
       {
-        "tag": "node-ru-51",
+        "tag": "node-ru-56",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3902,7 +4230,7 @@
         }
       },
       {
-        "tag": "node-ai-52",
+        "tag": "node-ai-57",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3932,7 +4260,7 @@
         }
       },
       {
-        "tag": "node-ai-53",
+        "tag": "node-ai-58",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3962,7 +4290,7 @@
         }
       },
       {
-        "tag": "node-ai-54",
+        "tag": "node-ai-59",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -3992,7 +4320,7 @@
         }
       },
       {
-        "tag": "node-ru-55",
+        "tag": "node-ru-60",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -4022,7 +4350,7 @@
         }
       },
       {
-        "tag": "node-ru-56",
+        "tag": "node-ru-61",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -4052,7 +4380,7 @@
         }
       },
       {
-        "tag": "node-ru-57",
+        "tag": "node-ru-62",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -4082,7 +4410,7 @@
         }
       },
       {
-        "tag": "node-ai-58",
+        "tag": "node-ai-63",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -4112,7 +4440,7 @@
         }
       },
       {
-        "tag": "node-ai-59",
+        "tag": "node-ai-64",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -4148,7 +4476,7 @@
         }
       },
       {
-        "tag": "node-ai-60",
+        "tag": "node-ai-65",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -4184,7 +4512,7 @@
         }
       },
       {
-        "tag": "node-ru-61",
+        "tag": "node-ru-66",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -4227,7 +4555,7 @@
         }
       },
       {
-        "tag": "node-ru-62",
+        "tag": "node-ru-67",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -4261,7 +4589,7 @@
         }
       },
       {
-        "tag": "node-ru-63",
+        "tag": "node-ru-68",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -4326,7 +4654,7 @@
         }
       },
       {
-        "tag": "node-ai-64",
+        "tag": "node-ai-69",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -4356,7 +4684,7 @@
         }
       },
       {
-        "tag": "node-ru-65",
+        "tag": "node-ru-70",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -4388,7 +4716,7 @@
         }
       },
       {
-        "tag": "node-ru-66",
+        "tag": "node-ru-71",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -4418,7 +4746,7 @@
         }
       },
       {
-        "tag": "node-ai-67",
+        "tag": "node-ai-72",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -4448,7 +4776,7 @@
         }
       },
       {
-        "tag": "node-ai-68",
+        "tag": "node-ai-73",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -4478,7 +4806,7 @@
         }
       },
       {
-        "tag": "node-ai-69",
+        "tag": "node-ai-74",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -7350,6 +7678,137 @@
         "settings": {
           "vnext": [
             {
+              "address": "nl-central.v8x2b.lol",
+              "port": 443,
+              "users": [
+                {
+                  "id": "846cedee-2a52-0002-a0b9-11850ead6a8b",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "nl-central.v8x2b.lol",
+            "fingerprint": "ios",
+            "publicKey": "q3UXFUE5yYxNE4ugLUnYdpc9WRtR-sjsDTrKsiqzDHE",
+            "shortId": "",
+            "spiderX": "/"
+          }
+        }
+      },
+      {
+        "tag": "node-ai-8",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "itly.yandex-api.store",
+              "port": 8443,
+              "users": [
+                {
+                  "id": "78559873-84ef-4cab-a0b2-46d4cd20de4a",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "fingerprint": "qq",
+            "allowInsecure": false,
+            "serverName": "itly.yandex-api.store",
+            "alpn": [
+              "http/1.1"
+            ]
+          },
+          "wsSettings": {
+            "path": "/assets",
+            "headers": {
+              "Host": "itly.yandex-api.store"
+            }
+          }
+        }
+      },
+      {
+        "tag": "node-ai-9",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "179.255.190.43",
+              "port": 8443,
+              "users": [
+                {
+                  "id": "78559873-84ef-4cab-a0b2-46d4cd20de4a",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "fingerprint": "qq",
+            "allowInsecure": false,
+            "serverName": "itly.yandex-api.store"
+          },
+          "wsSettings": {
+            "path": "/assets",
+            "headers": {
+              "Host": "itly.yandex-api.store"
+            }
+          }
+        }
+      },
+      {
+        "tag": "node-ai-10",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "itly.yandex-api.store",
+              "port": 8443,
+              "users": [
+                {
+                  "id": "78559873-84ef-4cab-a0b2-46d4cd20de4a",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "fingerprint": "ios",
+            "allowInsecure": false,
+            "serverName": "itly.yandex-api.store"
+          },
+          "wsSettings": {
+            "path": "/assets",
+            "headers": {
+              "Host": "itly.yandex-api.store"
+            }
+          }
+        }
+      },
+      {
+        "tag": "node-ai-11",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
               "address": "ne.zainet.tech",
               "port": 443,
               "users": [
@@ -7375,7 +7834,7 @@
         }
       },
       {
-        "tag": "node-ai-8",
+        "tag": "node-ai-12",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -7407,7 +7866,7 @@
         }
       },
       {
-        "tag": "node-ai-9",
+        "tag": "node-ai-13",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -7439,7 +7898,7 @@
         }
       },
       {
-        "tag": "node-ai-10",
+        "tag": "node-ai-14",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -7472,7 +7931,40 @@
         }
       },
       {
-        "tag": "node-ai-11",
+        "tag": "node-ai-15",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "support.zoom.us",
+              "port": 443,
+              "users": [
+                {
+                  "id": "b054e267-e2d8-4ca2-b95e-79ca5cb7cf9a",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "fingerprint": "edge",
+            "allowInsecure": false,
+            "serverName": "cloud.ghostdev.lk"
+          },
+          "wsSettings": {
+            "path": "/",
+            "headers": {
+              "Host": "cloud.ghostdev.lk"
+            }
+          }
+        }
+      },
+      {
+        "tag": "node-ai-16",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -7502,7 +7994,7 @@
         }
       },
       {
-        "tag": "node-ai-12",
+        "tag": "node-ai-17",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -7532,7 +8024,7 @@
         }
       },
       {
-        "tag": "node-ai-13",
+        "tag": "node-ai-18",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -7562,7 +8054,7 @@
         }
       },
       {
-        "tag": "node-ai-14",
+        "tag": "node-ai-19",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -7592,7 +8084,7 @@
         }
       },
       {
-        "tag": "node-ai-15",
+        "tag": "node-ai-20",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -7628,7 +8120,7 @@
         }
       },
       {
-        "tag": "node-ai-16",
+        "tag": "node-ai-21",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -7664,7 +8156,7 @@
         }
       },
       {
-        "tag": "node-ai-17",
+        "tag": "node-ai-22",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -7694,7 +8186,7 @@
         }
       },
       {
-        "tag": "node-ai-18",
+        "tag": "node-ai-23",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -7724,7 +8216,7 @@
         }
       },
       {
-        "tag": "node-ai-19",
+        "tag": "node-ai-24",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -7754,7 +8246,7 @@
         }
       },
       {
-        "tag": "node-ai-20",
+        "tag": "node-ai-25",
         "protocol": "vless",
         "settings": {
           "vnext": [
@@ -9736,6 +10228,87 @@
     }
   },
   {
+    "remarks": "🇩🇪 Германия #16 · 🤖 ИИ · 🌍 Блокировки",
+    "log": {
+      "loglevel": "warning"
+    },
+    "inbounds": [
+      {
+        "tag": "socks",
+        "listen": "127.0.0.1",
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        },
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ]
+        }
+      },
+      {
+        "tag": "http",
+        "listen": "127.0.0.1",
+        "port": 10809,
+        "protocol": "http"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "node-ai-1",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "nl-central.v8x2b.lol",
+              "port": 443,
+              "users": [
+                {
+                  "id": "846cedee-2a52-0002-a0b9-11850ead6a8b",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "nl-central.v8x2b.lol",
+            "fingerprint": "ios",
+            "publicKey": "q3UXFUE5yYxNE4ugLUnYdpc9WRtR-sjsDTrKsiqzDHE",
+            "shortId": "",
+            "spiderX": "/"
+          }
+        }
+      },
+      {
+        "tag": "direct",
+        "protocol": "freedom"
+      },
+      {
+        "tag": "block",
+        "protocol": "blackhole"
+      }
+    ],
+    "routing": {
+      "domainStrategy": "AsIs",
+      "balancers": [],
+      "rules": [
+        {
+          "type": "field",
+          "network": "tcp,udp",
+          "outboundTag": "node-ai-1"
+        }
+      ]
+    }
+  },
+  {
     "remarks": "🇮🇩 Индонезия #1 · 🌍 Блокировки · 📶 Белые списки",
     "log": {
       "loglevel": "warning"
@@ -9895,6 +10468,264 @@
           "type": "field",
           "network": "tcp,udp",
           "outboundTag": "node-ru-1"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "🇮🇹 Италия #1 · 🤖 ИИ · 🌍 Блокировки",
+    "log": {
+      "loglevel": "warning"
+    },
+    "inbounds": [
+      {
+        "tag": "socks",
+        "listen": "127.0.0.1",
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        },
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ]
+        }
+      },
+      {
+        "tag": "http",
+        "listen": "127.0.0.1",
+        "port": 10809,
+        "protocol": "http"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "node-ai-1",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "itly.yandex-api.store",
+              "port": 8443,
+              "users": [
+                {
+                  "id": "78559873-84ef-4cab-a0b2-46d4cd20de4a",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "fingerprint": "qq",
+            "allowInsecure": false,
+            "serverName": "itly.yandex-api.store",
+            "alpn": [
+              "http/1.1"
+            ]
+          },
+          "wsSettings": {
+            "path": "/assets",
+            "headers": {
+              "Host": "itly.yandex-api.store"
+            }
+          }
+        }
+      },
+      {
+        "tag": "direct",
+        "protocol": "freedom"
+      },
+      {
+        "tag": "block",
+        "protocol": "blackhole"
+      }
+    ],
+    "routing": {
+      "domainStrategy": "AsIs",
+      "balancers": [],
+      "rules": [
+        {
+          "type": "field",
+          "network": "tcp,udp",
+          "outboundTag": "node-ai-1"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "🇮🇹 Италия #2 · 🤖 ИИ · 🌍 Блокировки",
+    "log": {
+      "loglevel": "warning"
+    },
+    "inbounds": [
+      {
+        "tag": "socks",
+        "listen": "127.0.0.1",
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        },
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ]
+        }
+      },
+      {
+        "tag": "http",
+        "listen": "127.0.0.1",
+        "port": 10809,
+        "protocol": "http"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "node-ai-1",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "179.255.190.43",
+              "port": 8443,
+              "users": [
+                {
+                  "id": "78559873-84ef-4cab-a0b2-46d4cd20de4a",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "fingerprint": "qq",
+            "allowInsecure": false,
+            "serverName": "itly.yandex-api.store"
+          },
+          "wsSettings": {
+            "path": "/assets",
+            "headers": {
+              "Host": "itly.yandex-api.store"
+            }
+          }
+        }
+      },
+      {
+        "tag": "direct",
+        "protocol": "freedom"
+      },
+      {
+        "tag": "block",
+        "protocol": "blackhole"
+      }
+    ],
+    "routing": {
+      "domainStrategy": "AsIs",
+      "balancers": [],
+      "rules": [
+        {
+          "type": "field",
+          "network": "tcp,udp",
+          "outboundTag": "node-ai-1"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "🇮🇹 Италия #3 · 🤖 ИИ · 🌍 Блокировки",
+    "log": {
+      "loglevel": "warning"
+    },
+    "inbounds": [
+      {
+        "tag": "socks",
+        "listen": "127.0.0.1",
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        },
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ]
+        }
+      },
+      {
+        "tag": "http",
+        "listen": "127.0.0.1",
+        "port": 10809,
+        "protocol": "http"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "node-ai-1",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "itly.yandex-api.store",
+              "port": 8443,
+              "users": [
+                {
+                  "id": "78559873-84ef-4cab-a0b2-46d4cd20de4a",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "fingerprint": "ios",
+            "allowInsecure": false,
+            "serverName": "itly.yandex-api.store"
+          },
+          "wsSettings": {
+            "path": "/assets",
+            "headers": {
+              "Host": "itly.yandex-api.store"
+            }
+          }
+        }
+      },
+      {
+        "tag": "direct",
+        "protocol": "freedom"
+      },
+      {
+        "tag": "block",
+        "protocol": "blackhole"
+      }
+    ],
+    "routing": {
+      "domainStrategy": "AsIs",
+      "balancers": [],
+      "rules": [
+        {
+          "type": "field",
+          "network": "tcp,udp",
+          "outboundTag": "node-ai-1"
         }
       ]
     }
@@ -11301,6 +12132,91 @@
           "security": "tls",
           "tlsSettings": {
             "fingerprint": "android",
+            "allowInsecure": false,
+            "serverName": "cloud.ghostdev.lk"
+          },
+          "wsSettings": {
+            "path": "/",
+            "headers": {
+              "Host": "cloud.ghostdev.lk"
+            }
+          }
+        }
+      },
+      {
+        "tag": "direct",
+        "protocol": "freedom"
+      },
+      {
+        "tag": "block",
+        "protocol": "blackhole"
+      }
+    ],
+    "routing": {
+      "domainStrategy": "AsIs",
+      "balancers": [],
+      "rules": [
+        {
+          "type": "field",
+          "network": "tcp,udp",
+          "outboundTag": "node-ai-1"
+        }
+      ]
+    }
+  },
+  {
+    "remarks": "🇸🇬 Сингапур #2 · 🤖 ИИ · 🌍 Блокировки",
+    "log": {
+      "loglevel": "warning"
+    },
+    "inbounds": [
+      {
+        "tag": "socks",
+        "listen": "127.0.0.1",
+        "port": 10808,
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        },
+        "sniffing": {
+          "enabled": true,
+          "destOverride": [
+            "http",
+            "tls",
+            "quic"
+          ]
+        }
+      },
+      {
+        "tag": "http",
+        "listen": "127.0.0.1",
+        "port": 10809,
+        "protocol": "http"
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "node-ai-1",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "support.zoom.us",
+              "port": 443,
+              "users": [
+                {
+                  "id": "b054e267-e2d8-4ca2-b95e-79ca5cb7cf9a",
+                  "encryption": "none"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "ws",
+          "security": "tls",
+          "tlsSettings": {
+            "fingerprint": "edge",
             "allowInsecure": false,
             "serverName": "cloud.ghostdev.lk"
           },
