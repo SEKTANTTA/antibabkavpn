@@ -5,7 +5,7 @@
 делит на группы (ИИ / белые списки / обычные блокировки / только РФ) и
 собирает Clash Meta (mihomo) конфиги с авто-выбором лучшего сервера.
 
-Запуск:  python3 -I build.py <файл1[,файл2=bl,...]> <папка_вывода> [--allow-insecure] [--alive probe.json]
+Запуск:  python3 -I build.py <файл1[,файл2=bl,файл3=auto,файл4=cap,...]> <папка_вывода> [--allow-insecure] [--alive probe.json]
 
 --alive: результат probe.py; нерабочие зарубежные серверы «только для блокировок» убираются,
 страна берётся по реальному выходу, внутри страны сервера идут от быстрых к медленным.
@@ -25,7 +25,8 @@ COUNTRIES = {
 }
 
 # Страны, где ИИ-сервисы (ChatGPT, Claude, Gemini...) недоступны или ограничены
-NO_AI = {"RU", "BY"}
+# страны выхода, где Gemini/ChatGPT/Claude недоступны
+NO_AI = {"RU", "BY", "CN", "HK", "MO", "IR", "KP", "SY", "CU"}
 
 AI_DOMAINS = [
     "openai.com", "chatgpt.com", "oaistatic.com", "oaiusercontent.com", "sora.com",
@@ -97,9 +98,8 @@ def purpose(n):
     wl = " · 📶 Белые списки" if n.get("wl", True) else ""
     if n["cc"] == "RU":
         return "📶 Белые списки"
-    if n["cc"] in NO_AI:
-        return "🌍 Блокировки" + wl
-    return "🤖 ИИ · 🌍 Блокировки" + wl
+    ai = "🤖 ИИ · " if n.get("ai") else ""
+    return ai + "🌍 Блокировки" + wl
 
 
 def clash_proxy(n):
@@ -168,7 +168,7 @@ def build_clash(mode, nodes):
     proxies = [clash_proxy(n) for n in cl]
     names_all = [p["name"] for p in proxies]
     names_wl = [n["name"] for n in cl if n.get("wl", True)]
-    names_ai = [n["name"] for n in cl if n["cc"] not in NO_AI]
+    names_ai = [n["name"] for n in cl if n.get("ai")]
     names_reg = [n["name"] for n in cl if n["cc"] != "RU"]
     names_ru = [n["name"] for n in cl if n["cc"] == "RU"]
 
@@ -191,7 +191,8 @@ def build_clash(mode, nodes):
         "IP-CIDR,127.0.0.0/8,DIRECT,no-resolve", "IP-CIDR,10.0.0.0/8,DIRECT,no-resolve",
         "IP-CIDR,172.16.0.0/12,DIRECT,no-resolve", "IP-CIDR,192.168.0.0/16,DIRECT,no-resolve",
     ]
-    rules += [f"DOMAIN-SUFFIX,{d},{g_ai}" for d in AI_DOMAINS]
+    if names_ai:
+        rules += [f"DOMAIN-SUFFIX,{d},{g_ai}" for d in AI_DOMAINS]
     if mode == "regular":
         rules += [f"DOMAIN-SUFFIX,{d},DIRECT" for d in RU_DIRECT_DOMAINS]
         rules.append("GEOIP,RU,DIRECT")
@@ -264,12 +265,12 @@ def xray_config(remarks, nodes, ai_routing=False):
     """Один конфиг Xray. Все узлы в одном балансировщике leastPing = авто-сервер."""
     outs = []
     for i, n in enumerate(nodes, 1):
-        tag = ("node-ai-" if n["cc"] not in NO_AI else "node-ru-") + str(i)
+        tag = ("node-ai-" if n.get("ai") else "node-ru-") + str(i)
         outs.append(xray_outbound(n, tag))
     outs += [{"tag": "direct", "protocol": "freedom"}, {"tag": "block", "protocol": "blackhole"}]
     balancers = [{"tag": "auto", "selector": ["node-"], "strategy": {"type": "leastPing"}}]
     rules = []
-    if ai_routing and any(n["cc"] not in NO_AI for n in nodes):
+    if ai_routing and any(n.get("ai") for n in nodes):
         balancers.append({"tag": "auto-ai", "selector": ["node-ai-"], "strategy": {"type": "leastPing"}})
         rules.append({"type": "field", "domain": [f"domain:{d}" for d in AI_DOMAINS],
                       "balancerTag": "auto-ai"})
@@ -293,7 +294,7 @@ def xray_config(remarks, nodes, ai_routing=False):
 
 def build_xray_sub(nodes):
     """Подписка Xray JSON: сверху авто-конфиги, ниже каждый сервер отдельно."""
-    ai = [n for n in nodes if n["cc"] not in NO_AI]
+    ai = [n for n in nodes if n.get("ai")]
     reg = [n for n in nodes if n["cc"] != "RU"]
     items = [
         xray_config(f"🌍 АВТО Обычные блокировки — {BRAND}", reg),
@@ -340,13 +341,14 @@ def main():
                 n = parse_link(l)
                 if not n:
                     continue
-                n["wl"] = kind != "bl"
+                n["wl"] = ("[BL]" not in n["frag"]) if kind == "auto" else kind != "bl"
+                n["cap"] = kind == "cap"  # большой источник: берём не больше CAP лучших
                 parsed.append(n)
     total_lines = len(parsed)
     # мусор: служебные заглушки, узлы без флага страны, российские узлы из списка «только блокировки»
     parsed = [n for n in parsed
               if n["host"] not in ("0.0.0.0", "127.0.0.1") and n["uuid"] != "warning"
-              and n["cc"] != "XX" and (n["wl"] or n["cc"] != "RU")]
+              and (n["cc"] != "XX" or n.get("cap")) and (n["wl"] or n["cc"] != "RU")]
     dropped_insecure = 0
     seen, nodes = set(), []
     for n in parsed:
@@ -365,6 +367,8 @@ def main():
         nodes.append(n)
 
     dropped_dead = 0
+    if "--alive" not in sys.argv:  # без проверки страну безфлажковых узлов не узнать
+        nodes = [n for n in nodes if n["cc"] != "XX"]
     if "--alive" in sys.argv:
         alive = json.load(open(sys.argv[sys.argv.index("--alive") + 1], encoding="utf-8"))
         kept = []
@@ -376,11 +380,40 @@ def main():
                 if len(ex) == 2 and ex.isalpha():
                     n["cc"] = ex
                 kept.append(n)
-            elif n["wl"] or n["cc"] == "RU":
+            elif (n["wl"] or n["cc"] == "RU") and n["cc"] != "XX":
                 kept.append(n)  # белые-списки-серверы из-за границы не проверить честно: оставляем
             else:
                 dropped_dead += 1
         nodes = kept
+
+    # большой источник (rjsxrd): оставляем CAP лучших, поровну по странам
+    CAP = 120
+    capped = [n for n in nodes if n.get("cap")]
+    dropped_cap = 0
+    if len(capped) > CAP:
+        by = {}
+        for n in sorted(capped, key=lambda n: n.get("ms", 0)):
+            by.setdefault(n["cc"], []).append(n)
+        keep = []
+        while len(keep) < CAP and any(by.values()):
+            for cc in list(by):
+                if by[cc] and len(keep) < CAP:
+                    keep.append(by[cc].pop(0))
+        ks = {id(n) for n in keep}
+        dropped_cap = len(capped) - len(keep)
+        nodes = [n for n in nodes if not n.get("cap") or id(n) in ks]
+
+    # ИИ-метка. С результатами проверки: только если через сервер реально открылся Gemini.
+    # Без проверки: только прямые зарубежные серверы из списка «блокировки», мост из белых списков не считаем.
+    have_probe = "--alive" in sys.argv
+    for n in nodes:
+        if n["cc"] in NO_AI:
+            n["ai"] = False
+        elif have_probe:
+            r = alive.get("|".join(map(str, dedup_key(n))))
+            n["ai"] = bool(r and r.get("ok") and r.get("gemini"))
+        else:
+            n["ai"] = not n["wl"]
 
     # сортируем: РФ сначала (стабильнее при белых списках), потом по странам
     nodes.sort(key=lambda n: (n["cc"] == "RU", COUNTRIES.get(n["cc"], n["cc"]), n.get("ms", 0)))
@@ -391,7 +424,7 @@ def main():
         n["name"] = f"{flag} {COUNTRIES.get(n['cc'], n['cc'])} #{counters[n['cc']]} · {purpose(n)}"
         n["new_link"] = n["raw"].split("#", 1)[0] + "#" + quote(n["name"], safe="")
 
-    ai = [n for n in nodes if n["cc"] not in NO_AI]
+    ai = [n for n in nodes if n.get("ai")]
     reg = [n for n in nodes if n["cc"] != "RU"]
     ru = [n for n in nodes if n["cc"] == "RU"]
 
@@ -415,7 +448,7 @@ def main():
         json.dump(xray_items, f, ensure_ascii=False, indent=2)
 
     stats = {"строк в источнике": total_lines, "конфигов в auto.json": len(xray_items), "разобрано": len(parsed),
-             "убрано без шифрования": dropped_insecure, "убрано нерабочих": dropped_dead, "после дедупа": len(nodes),
+             "убрано без шифрования": dropped_insecure, "убрано нерабочих": dropped_dead, "срезано сверх лимита": dropped_cap, "после дедупа": len(nodes),
              "ИИ": len(ai), "обычные блокировки": len(reg), "РФ": len(ru)}
     with open(f"{out}/stats.json", "w", encoding="utf-8") as f:
         json.dump(stats, f, ensure_ascii=False, indent=2)
